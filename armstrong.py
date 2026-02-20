@@ -24,6 +24,31 @@ while True:
             print(f"{num} is an Armstrong number")
         else:
             print(f"{num} is not an Armstrong number ")
-            
+
+
+    elif choice == "2":
+        start = int(input("enter start of range: "))
+        end = int (input("Enter end of range: "))
+        print(f"Armstrong numbers between {start} and {end}:")
+        found = False
+
+        for num in range (start, end + 1):
+            if is_armstrong(num):
+                print(num, end= "  ")
+                found = True
+
+        if not found:
+            print("None found in this range ")
+
+    elif choice == "3":
+
+       print("Exit program")
+    break
+
+else:
+     print("Invalid choice! Please enter 1, 2, or 3.")
+
+          
+
 
 
