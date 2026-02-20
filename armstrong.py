@@ -9,4 +9,21 @@ def is_armstrong (num):
     return sum_digits == num 
 
 while True:
-    
+
+    print("\nArmstong Number checker")
+    print("1. Check a single number ")
+    print("2. Show All Armstong number in a range")
+    print("3. Exit")
+
+
+    choice = input("Enter your choice (1/2/3): ")
+
+    if choice == "1":
+        num = int(input("Enter a number to check: "))
+        if is_armstrong(num):
+            print(f"{num} is an Armstrong number")
+        else:
+            print(f"{num} is not an Armstrong number ")
+            
+
+
